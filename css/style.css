@@ -1,0 +1,188 @@
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.Btn{
+    background-color: rgb(118, 88, 39);
+    padding: 7px 35px;
+    border-radius: 18px;
+    color: white;
+    text-transform: capitalize;
+    border: none;
+}
+
+.inputStyle{
+    border-radius: 35px;
+    padding: 17px;
+}
+
+nav {
+    background-color: rgb(234, 198, 150);
+    
+}
+
+nav .logo img{
+    width: 60px;
+    height: 40px;
+}
+
+
+nav p{
+    font-size: 8px;
+}
+
+nav ul{
+    list-style-type: none
+}
+nav ul li{
+    margin-right: 20px;
+}
+nav ul li{
+    padding: 3px 20px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+nav ul li:nth-child(1){
+   border: 2px solid rgb(157, 178, 191);
+   color: rgb(157, 178, 191);
+}
+nav ul li:hover{
+   border: 2px solid rgb(157, 178, 191);
+   color: rgb(157, 178, 191);
+   transition: all 0.5s;
+}
+
+#sec-1{
+    background-image: url('../imgs/banner.png');
+    height: 320px;
+    padding-top: 70px;
+}
+
+#sec-1 button{
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+   
+}
+
+#sec-1 .container{
+    position: relative;
+}
+
+#sec-1 .row{
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    color: white;
+}
+
+#sec-1 header{
+    padding: 5px;
+    color: white;
+}
+#sec-1 article{
+    padding: 0 ;
+}
+
+#sec-1 .body{
+    padding: 10px;
+}
+article:nth-child(1) .body{
+    background-color: rgba(118, 88, 39, 0.7);
+}
+article:nth-child(1)  .footer{
+    background-color: rgba(118, 88, 39, 0.7);
+    
+}
+
+article:nth-child(2) {
+    background-color: rgba(234, 198, 150, 0.7);
+}
+article:nth-child(3) {
+    background-color: rgba(118, 88, 39, 0.7);
+}
+article:nth-child(1) header{
+    background-color: rgba(234, 198, 150, 0.7);
+}
+article:nth-child(2) header{
+    background-color: rgba(118, 88, 39, 0.7);
+}
+article:nth-child(3) header{
+    background-color: rgba(234, 198, 150, 0.7);
+}
+
+#today_condition_img{
+    width: 80px;
+    height: 80px;
+}
+
+#sec-1 .footer img{
+    width: 20px;
+    height: 20px;
+}
+
+#sec-2{
+    background-color: rgb(200, 174, 125);
+    height: 200px;
+}
+#sec-3{
+    background-color: rgb(234, 198, 150);
+}
+
+#sec-3 .col-md-8 div {
+    position: relative;
+}
+
+
+#sec-3 button{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+}
+
+#sec-3 .col-md-4{
+    padding-left: 80px;
+}
+#sec-3 .col-md-4 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sec-3 .col-md-4 span i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(118, 88, 39);
+    color: white;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+
+    @media only screen and (min-width: 452px) {
+
+        #sec-2 {
+            height: 780px;
+
+        }
+        .ms-5{
+            margin-left: auto !important ;
+        }
+
+    }
+
+    @media only screen and (min-width: 768px) {
+
+        #sec-2 {
+            height: 300px;
+        }
+    }
+
