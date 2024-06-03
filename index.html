@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=!, initial-scale=1.0">
@@ -8,170 +9,174 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-              <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
                 <div class="logo d-flex justify-content-center align-items-center w-100">
-                    <img src="imgs/logo.png" alt="" class="mx-2" >
+                    <img src="imgs/logo.webp" alt="" class="mx-2">
                     <div class="mt-3">
                         <h6>Weather</h6>
                         <p>tagline goes here</p>
                     </div>
                 </div>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">LiveCams</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Photos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LiveCams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-          </nav>
+        </div>
+    </nav>
 
-        <section id="sec-1">
-            <div class="container">
-                <div class=" position-relative mb-4">
-                    <input id="searchInput"  type="text" class="form-control inputStyle" onkeyup="searchData(this.value)" placeholder="Find your location..">
-                    <button class="Btn">find</button>
-                </div>
-
-                <div class="row ">
-
-                    <!-- TODADY -->
-                    <article class="col-md-4 ">
-                        <div class="">
-                            <header class="d-flex justify-content-between">
-                                <div id="today_name">sunday</div>
-                                <div id="today_date">
-                                    <span id="today_number">27</span>
-                                    <span id="today_month">oct</span>
-                                </div>
-                            </header>
-
-                            <div class="body p-3">
-                                <p id="city_name" class="fs-3">cairo</p>
-                                <div class="d-flex">
-                                    <h2 id="temp_in_C" class="display-3 display-1 fw-bold">  26<sup>o</sup>C  </h2>
-                                    <img id="today_condition_img" src="imgs/113.png" alt="" class="ms-5">
-                                </div>
-                                <p id="today_condition" class="">sunny</p>
-                            </div>
-
-                            <div class="footer d-flex px-3 ">
-                                <div class="d-flex me-3  ">
-                                    <img src="imgs/icon-umberella.png" alt="" class="">
-                                    <p id="humidity">20%</p>
-                                </div>
-                                <div class="d-flex me-3 ">
-                                    <img src="imgs/icon-wind.png" alt="" class="">
-                                    <p id="wind_velocity">18km/h</p>
-                                </div>
-                                <div class="d-flex me-3 ">
-                                    <img src="imgs/icon-compass.png" alt="" class="">
-                                    <p id="wind_dir">East</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </article>
-
-                    
-
-
-                    <!-- TOMORROW -->
-                    <article class="col-md-4 text-center">
-                        <div class="">
-                            <header class="nameOfNextDay">
-                                sunday
-                            </header>
-
-                            <div class="body pt-5 ">
-                                    <img class="condition_img" src="imgs/113 (1).png" alt="" >
-                                    <h2 class="max_temp" class="fs-3 fw-bold">28<sup>o</sup>C</h2>
-                                    <p class="min_temp">22<sup>o</sup> </p>
-                                    <p class="condition">sunny</p>  
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- AFTER TOMORROW -->
-                    <article class="col-md-4 text-center ">
-                        <div class="">
-                            <header class="nameOfNextDay">
-                                sunday
-                            </header>
-
-                            <div class="body pt-5">
-                                <img class="condition_img" src="imgs/113 (1).png" alt="">
-                                <h2 class="max_temp" class="fs-4 fw-bold">31<sup>o</sup>C</h2>
-                                <p class="min_temp"> 18<sup>o</sup> </p>
-                                <p class="condition">sunny</p>
-                        
-                            </div>
-                        </div>
-                    </article>
-
-                    
-
-                </div>
-                
-                
+    <section id="sec-1">
+        <div class="container">
+            <div class=" position-relative mb-4">
+                <input id="searchInput" type="text" class="form-control inputStyle" onchange="searchData(this.value)"
+                    placeholder="Find your location..">
+                <button class="Btn">find</button>
             </div>
-        </section>
-    
-        <section id="sec-2" >
+
+            <div class="row ">
+
+                <!-- TODADY -->
+                <article class="col-md-4 ">
+                    <div class="">
+                        <header class="d-flex justify-content-between">
+                            <div id="today_name"></div>
+                            <div id="today_date">
+                                <span id="today_number"></span>
+                                <span id="today_month"></span>
+                            </div>
+                        </header>
+
+                        <div class="body p-3">
+                            <p id="city_name" class="fs-3"></p>
+                            <div class="d-flex">
+                                <h2 id="temp_in_C" class="display-3 display-1 fw-bold"> <sup>o</sup>C </h2>
+                                <img id="today_condition_img" src="./imgs/113.webp" alt="moon" class="ms-5">
+                            </div>
+                            <p id="today_condition" class=""></p>
+                        </div>
+
+                        <div class="footer d-flex px-3 ">
+                            <div class="d-flex me-3  ">
+                                <img src="./imgs/icon-umberella.png" alt="sun" class="">
+                                <p id="humidity"></p>
+                            </div>
+                            <div class="d-flex me-3 ">
+                                <img src="./imgs/icon-wind.png" alt="sun" class="">
+                                <p id="wind_velocity"></p>
+                            </div>
+                            <div class="d-flex me-3 ">
+                                <img src="./imgs/icon-compass.png" alt="sun" class="">
+                                <p id="wind_dir"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+
+
+                <!-- TOMORROW -->
+                <article class="col-md-4 text-center">
+                    <div class="">
+                        <header class="nameOfNextDay">
+                            sunday
+                        </header>
+
+                        <div class="body pt-5 ">
+                            <img class="condition_img" src="imgs/113 (1).webp" alt="sun">
+                            <h2 class="max_temp" class="fs-3 fw-bold">28<sup>o</sup>C</h2>
+                            <p class="min_temp">22<sup>o</sup> </p>
+                            <p class="condition">sunny</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- AFTER TOMORROW -->
+                <article class="col-md-4 text-center ">
+                    <div class="">
+                        <header class="nameOfNextDay">
+                            sunday
+                        </header>
+
+                        <div class="body pt-5">
+                            <img class="condition_img" src="./imgs/113 (1).webp" alt="sun">
+                            <h2 class="max_temp" class="fs-4 fw-bold">31<sup>o</sup>C</h2>
+                            <p class="min_temp"> 18<sup>o</sup> </p>
+                            <p class="condition">sunny</p>
+
+                        </div>
+                    </div>
+                </article>
+
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="sec-2">
+        <div class="row">
+
+        </div>
+
+    </section>
+
+    <section id="sec-3" class="pt-5">
+        <div class="container">
             <div class="row">
-                
-            </div>
 
-        </section>
-
-        <section id="sec-3" class="pt-5">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-8">
-                        <div>
-                            <input type="text" class="form-control inputStyle mb-3" placeholder="Enter your email to subscribe...">
-                            <button class="Btn">subscribe</button>
-                        </div>
+                <div class="col-md-8">
+                    <div>
+                        <input type="text" class="form-control inputStyle mb-3"
+                            placeholder="Enter your email to subscribe...">
+                        <button class="Btn">subscribe</button>
                     </div>
-
-                    <div class="col-md-4">
-                        <div class="mb-2">
-                           <span><i class="fa-brands fa-facebook"></i> </span>    
-                           <span><i class="fa-brands fa-twitch"></i> </span>    
-                           <span><i class="fa-brands fa-youtube"></i> </span>    
-                           <span><i class="fa-brands fa-google"></i> </span>    
-                           
-                        </div>
-                    </div>
-                    <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
-
                 </div>
+
+                <div class="col-md-4">
+                    <div class="mb-2">
+                        <span><i class="fa-brands fa-facebook"></i> </span>
+                        <span><i class="fa-brands fa-twitch"></i> </span>
+                        <span><i class="fa-brands fa-youtube"></i> </span>
+                        <span><i class="fa-brands fa-google"></i> </span>
+
+                    </div>
+                </div>
+                <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
             </div>
-        </section>
+        </div>
+    </section>
 
 
 
     <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
     <script src="js/main.js"></script>
 </body>
+
 </html>
